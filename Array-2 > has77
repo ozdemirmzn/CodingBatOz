@@ -1,0 +1,21 @@
+//Given an array of ints, return true if the array contains two 7's next to each other, 
+//or there are two 7's separated by one element, such as with {7, 1, 7}.
+
+public boolean has77(int[] nums) {
+  boolean check=false;
+  for(int i=0; i<nums.length-1; i++){
+    if(nums[i]==7 && nums[i+1]==7){
+      check = true;
+      break;
+      
+    }else{
+    for(int j=0; j<nums.length-2; j++){
+    
+    if (nums[j]==7 && nums[j+2]==7){
+      check=true;
+      break;
+    }
+  }}
+  
+}return check;
+}
